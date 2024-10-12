@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+  overflow-y: hidden;  
+}
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #fc7f41, #FFAD60);
+}
+#main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body{
+  width: 25rem;
+  height: 32rem;
+  box-shadow: 3px 3px 30px;
+}
+#Display{
+  width: 100%;
+  height: 7.5rem;
+  text-align: right;
+  font-size: 4rem;
+  padding-top: 15px;
+  padding-right: 5px;
+  background-color: #42423dfa;
+  outline: none;
+  border: none;
+  color: rgba(226, 209, 209, 0.493);
+}
+.Display::placeholder{
+  color: rgba(226, 209, 209, 0.493);
+}
+.row{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.button{
+  width: 10rem;
+  height: 5rem;
+  background-color: #53585a;
+  outline: none;
+  border: 1px solid rgb(63, 63, 63);
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.operand{
+  background-color: orange;
+}
+.zero{
+  width: 20rem;
+}
+.AC,.DEL,.mod{
+  background-color: #474747;
+}
+.structure{
+  position: relative;
+}
+.red,.yellow,.green{
+  width: 15px;
+  height: 15px;
+  border-radius:50%;
+  border: none;
+  outline: none;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -ms-border-radius:50%;
+  -o-border-radius:50%;
+  margin-right: 10px;
+}
+.yellow{
+  background-color: yellow;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.circle{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: 10px;
+  left: 10px;
+}
+
+@media screen and (max-width: 434px) {
+  .body{
+    width: 20rem;
+  }
+}
+
